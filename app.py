@@ -44,7 +44,7 @@ def gen(camera):
        
 @app.route('/login', methods=['POST'])
 def do_admin_login():
-    if request.form['password'] == 'codu1234' and request.form['username'] == 'CODU':
+    if request.form['password'] == 'pw' and request.form['username'] == 'id':
         session['logged_in'] = True
     else:
         flash('wrong password!')
